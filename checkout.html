@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkout — LUMEN &amp; LOOM</title>
+<meta name="description" content="Coats, knitwear and tailoring cut in editions of 80 to 400. Wool from Biella, linen from Normandy, sewn in Porto.">
+<meta name="theme-color" content="#211a15">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+<a class="sr" href="#main">Skip to content</a>
+
+<div class="announce">Free carbon-neutral shipping over <b>$250</b>. Code <b>LOOM10</b> takes 10% off your first order.</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <div>
+      <button class="menu-btn" data-action="open-nav" aria-label="Open menu"><i></i></button>
+      <nav aria-label="Primary">
+        <a href="shop.html" data-nav="shop">Shop</a>
+        <a href="shop.html?cat=Knitwear" data-nav="knit">Knitwear</a>
+        <a href="about.html" data-nav="about">Our story</a>
+      </nav>
+    </div>
+    <a class="logo" href="index.html" aria-label="Lumen and Loom, home">Lumen <span class="amp">&amp;</span> Loom</a>
+    <div class="hdr-right">
+      <a class="acct hide-m" href="about.html">Journal</a>
+      <button class="bag" data-action="open-cart" aria-label="Open bag">Bag <span class="count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main"><noscript><p style="padding:4rem 1rem">This shop needs JavaScript to list products.</p></noscript></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="logo" href="index.html">Lumen <span class="amp">&amp;</span> Loom</a>
+        <p style="max-width:32ch">Clothing cut in editions of 80 to 400, so nothing is made that will not be worn.</p>
+      </div>
+      <div><h5>Shop</h5><ul>
+        <li><a href="shop.html?cat=Outerwear">Outerwear</a></li>
+        <li><a href="shop.html?cat=Knitwear">Knitwear</a></li>
+        <li><a href="shop.html?cat=Dresses">Dresses</a></li>
+        <li><a href="shop.html?cat=Trousers">Trousers</a></li>
+        <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+      </ul></div>
+      <div><h5>Studio</h5><ul>
+        <li><a href="about.html">Our story</a></li>
+        <li><a href="about.html">Sourcing</a></li>
+        <li><a href="about.html">The makers</a></li>
+      </ul></div>
+      <div><h5>Care</h5><ul>
+        <li>Shipping and returns</li>
+        <li>30-day returns, unworn</li>
+        <li>Free repairs for life</li>
+        <li>hello@lumenandloom.example</li>
+      </ul></div>
+    </div>
+    <div class="bot"><span>&copy; 2026 Lumen &amp; Loom Atelier. A fictional brand for demonstration.</span><span>Prices in USD</span></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" data-action="close-all"></div>
+
+<aside class="drawer left" id="navDrawer" aria-label="Menu" aria-hidden="true">
+  <div class="drawer-h"><span class="logo" style="font-size:1.2rem">L <span class="amp">&amp;</span> L</span><button class="x" data-action="close-all" aria-label="Close menu"></button></div>
+  <nav class="mnav">
+    <a href="index.html">Home <small>Index</small></a>
+    <a href="shop.html">Shop <small id="mCount"></small></a>
+    <a href="shop.html?cat=Outerwear">Outerwear <small>Edition 14</small></a>
+    <a href="shop.html?cat=Knitwear">Knitwear <small>Slow knit</small></a>
+    <a href="about.html">Our story <small>Studio</small></a>
+  </nav>
+  <div class="mnav-foot">Porto &middot; Biella &middot; Normandy<br>Free carbon-neutral shipping over $250.</div>
+</aside>
+
+<aside class="drawer right" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+  <div class="drawer-h"><h3 class="h3">Your bag</h3><button class="x" data-action="close-all" aria-label="Close bag"></button></div>
+  <div class="drawer-b" id="drawerBody"></div>
+  <div class="drawer-f" id="drawerFoot"></div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
