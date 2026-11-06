@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Momo House — Himalayan kitchen in Melbourne. View the menu, gallery, hours, location, and book a table.">
+  <title>la delicious | himalayn kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="The Momo House home">
+        <span class="brand-badge" aria-hidden="true">
+          <!-- Circular fork / knife badge -->
+          <svg viewBox="0 0 48 48" width="22" height="22" fill="none">
+            <path d="M16 10v10c0 2.2-1.2 4-3 4V38" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M13 10v10M19 10v10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M32 10c3 3 3 7 0 10v18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M29 10v6c0 2 1.4 4 3 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">la delicious</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#about">About us</a>
+        <a href="#menu">Our menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#bookings">My bookings</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle light and dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M18 13.5A7.5 7.5 0 1 1 10.5 6 6 6 0 0 0 18 13.5Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="btn btn-pill" type="button" data-open-modal>Book a Table</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Himalayan kitchen · Aaradhyamandu</p>
+          <h1>Little pockets of <em>joy.</em></h1>
+          <p class="lead">Hand-folded momos, bold Himalayan flavours, and a warm table waiting for you — from lunch through late evening.</p>
+          <div class="hero-actions">
+            <a class="btn btn-pill" href="#menu">View Menu</a>
+            <button class="btn btn-ghost" type="button" data-open-modal>Book a Table</button>
+          </div>
+          <ul class="hero-meta">
+            <li><strong>Tue–Sun</strong> 12:00 PM – 10:30 PM</li>
+            <li><strong>aaradhyamandu</strong> |united states of aaradhya</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?auto=format&fit=crop&w=1100&q=80" alt="Steamed momos served on a dark plate with chilli oil">
+          </div>
+          <aside class="float-card">
+            <span class="float-dot" aria-hidden="true"></span>
+            <div>
+              <strong>Tables available tonight</strong>
+              <small>Walk-ins welcome until 9:30 PM</small>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>HAND-FOLDED ✦ FULL OF FLAVOUR ✦ MADE WITH LOVE ✦ OPEN TUE–SUN ✦ HAND-FOLDED ✦ FULL OF FLAVOUR ✦ MADE WITH LOVE ✦ OPEN TUE–SUN ✦</span>
+      </div>
+    </div>
+
+    <!-- ===== Menu ===== -->
+    <section class="section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Our menu</p>
+            <h2>Dishes worth gathering for</h2>
+          </div>
+          <p class="section-intro">Filter by course, then tap a plate. Prices are in AUD. Spice levels are tagged on each dish.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter menu by category">
+          <button class="chip is-active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="momo">Momos</button>
+          <button class="chip" type="button" data-filter="plates">Small plates</button>
+          <button class="chip" type="button" data-filter="mains">Mains</button>
+          <button class="chip" type="button" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="momo">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80" alt="Steamed vegetable dumplings">
+              <span class="tag">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Classic steamed momos</h3>
+                <p>Cabbage, ginger, garlic and a bright tomato-sesame chutney.</p>
+              </div>
+              <strong class="price">$12</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="momo">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Crispy pan-fried dumplings">
+              <span class="tag tag-pink">Spicy</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Firecracker momos</h3>
+                <p>Pan-fried pockets tossed in smoky house chilli oil.</p>
+              </div>
+              <strong class="price">$14</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="momo">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="Soup dumplings in broth">
+              <span class="tag tag-teal">New</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Jhol momos</h3>
+                <p>Steamed momos in a roasted tomato, sesame and timur broth.</p>
+              </div>
+              <strong class="price">$16</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="plates">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Fresh Himalayan-style salad">
+              <span class="tag tag-teal">Fresh</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Himalayan salad</h3>
+                <p>Crunchy greens, herbs, toasted peanuts and sesame-lime.</p>
+              </div>
+              <strong class="price">$11</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="plates">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Crispy fried snacks on a sharing plate">
+              <span class="tag">Share</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Chilli chicken bites</h3>
+                <p>Crisp chicken, peppers, spring onion and sticky chilli glaze.</p>
+              </div>
+              <strong class="price">$15</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80" alt="Bowl of thukpa noodle soup">
+              <span class="tag tag-purple">Comfort</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Thukpa</h3>
+                <p>Hand-cut noodles in a slow-simmered ginger-garlic broth.</p>
+              </div>
+              <strong class="price">$18</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Plate of fried rice with vegetables">
+              <span class="tag">House</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Kothey fried rice</h3>
+                <p>Wok-fired rice with seasonal vegetables and toasted garlic.</p>
+              </div>
+              <strong class="price">$17</strong>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks">
+            <div class="media">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80" alt="Iced fruit spritz in a tall glass">
+              <span class="tag tag-purple">Cool</span>
+            </div>
+            <div class="card-body">
+              <div>
+                <h3>Lychee spritz</h3>
+                <p>Lychee, lime, mint and sparkling water over crushed ice.</p>
+              </div>
+              <strong class="price">$8</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Warm dining room at The Momo House">
+          <div class="stamp">Est.<strong>2018</strong></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About us</p>
+          <h2>Food that feels like <em>home.</em></h2>
+          <p>We opened La delicious to gather people around Himalayan cooking — street-stall energy, careful folding, and tables that stay loud in the best way.</p>
+          <p>Every food is made in-house. Chutneys are ground daily. The room is built for lingering, not rushing.</p>
+          <div class="features">
+            <article>
+              <span class="feature-icon" aria-hidden="true">✦</span>
+              <h3>Handmade daily</h3>
+              <p>food made each morning, never from a freezer.</p>
+            </article>
+            <article>
+              <span class="feature-icon" aria-hidden="true">◇</span>
+              <h3>Honest ingredients</h3>
+              <p>Local produce with spices sourced from the hills.</p>
+            </article>
+            <article>
+              <span class="feature-icon" aria-hidden="true">♡</span>
+              <h3>A table for everyone</h3>
+              <p>Vegetarian, vegan and gluten-friendly options always on.</p>
+            </article>
+          </div>
+          <div class="hours-card">
+            <div>
+              <h3>Hours</h3>
+              <p>Tuesday – Sunday<br>12:00 PM – 10:30 PM<br>Closed Mondays</p>
+            </div>
+            <div>
+              <h3>Find us</h3>
+              <p>aaradhyamandu<br>nited atates of aaradhya<br><a href="https://maps.google.com/?q=Little+India+Melbourne" target="_blank" rel="noopener">Open map</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2>Good food. Good company.</h2>
+          </div>
+          <p class="section-intro">A peek at the kitchen, the room, and the plates that leave it.</p>
+        </header>
+        <div class="gallery-grid">
+          <figure class="gallery-item tall">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80" alt="Friends sharing a meal">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Plated restaurant dishes">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Bar and seating">
+          </figure>
+          <figure class="gallery-item wide">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80" alt="Evening dining atmosphere">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Close-up of a colourful dish">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80" alt="Set table with glassware">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== My bookings ===== -->
+    <section class="section bookings" id="bookings">
+      <div class="container bookings-grid">
+        <div>
+          <p class="eyebrow">My bookings</p>
+          <h2>Your table, in one place.</h2>
+          <p class="lead">Reservations you make on this device are saved here so you can review date, time, and party size before you arrive.</p>
+          <button class="btn btn-pill" type="button" data-open-modal>Book a Table</button>
+        </div>
+        <div class="booking-panel">
+          <h3>Upcoming reservations</h3>
+          <ul class="booking-list" id="booking-list"></ul>
+          <p class="empty-bookings" id="empty-bookings">No bookings yet. Reserve a table and it will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a class="brand" href="#home">
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="18" height="18" fill="none">
+            <path d="M16 10v10c0 2.2-1.2 4-3 4V38" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M13 10v10M19 10v10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M32 10c3 3 3 7 0 10v18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">La delicious</span>
+      </a>
+      <p>Handmade happiness, one momo at a time.</p>
+      <div class="socials">
+        <a href="#gallery" aria-label="Instagram">IG</a>
+        <a href="#gallery" aria-label="Facebook">FB</a>
+        <a href="mailto:hello@themomohouse.com" aria-label="Email">@</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© 2026 The Momo House</span>
+      <span>Aaradhyamandu , the united states of aaradhya</span>
+    </div>
+  </footer>
+
+  <!-- ===== Book a Table modal ===== -->
+  <div class="modal-backdrop" id="reserve-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="reserve-title">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close reservation form">×</button>
+      <h2 id="reserve-title">Book a Table</h2>
+      <p>We hold tables for 15 minutes past the reservation time.</p>
+      <form id="reserve-form">
+        <label>Name
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="you@email.com" required>
+        </label>
+        <div class="form-row">
+          <label>Date
+            <input type="date" name="date" required>
+          </label>
+          <label>Time
+            <select name="time" required>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="18:00">6:00 PM</option>
+              <option value="19:00" selected>7:00 PM</option>
+              <option value="19:30">7:30 PM</option>
+              <option value="20:00">8:00 PM</option>
+              <option value="20:30">8:30 PM</option>
+            </select>
+          </label>
+        </div>
+        <label>Guests
+          <select name="guests" required>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="6">6 guests</option>
+            <option value="8">8 guests</option>
+          </select>
+        </label>
+        <label>Notes <span class="optional">(optional)</span>
+          <textarea name="notes" rows="3" placeholder="Allergies, occasion, high chair…"></textarea>
+        </label>
+        <button class="btn btn-pill btn-block" type="submit">Confirm reservation</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
